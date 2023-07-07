@@ -41,7 +41,7 @@ TCNN_NAMESPACE_BEGIN
 class CudaGraph;
 
 inline std::deque<CudaGraph*>& current_captures() {
-	static thread_local std::deque<CudaGraph*> s_current_captures;
+	static std::deque<CudaGraph*> s_current_captures;
 	return s_current_captures;
 }
 
